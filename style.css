@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+   
+}
+
+.back{
+    width: 100%;
+    height: 100vh;
+    background: red;
+    position: relative;
+}
+
+.back img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.top{
+    width: 100%;
+    height: 100vh;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.workingarea{
+    width: 80%;
+    max-width: 1600px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.workingarea>img{
+    height: 100%;
+    width: 45%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.nav{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: all;
+}
+
+.nav img{
+    height: 60px;
+}
+
+.left_nav,.right_nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+
+.left_nav a ,.right_nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.hero_left{
+    min-width:50%;
+    
+    
+}
+
+.hero_left .element{
+    height: 9vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero_left .element h1{
+    font-family: 'kajiro';
+    color: white;
+    font-weight: 100;
+    font-size: 11vw;
+    line-height: .9;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.hero_left .element h1:nth-child(1){
+    top: 0;
+}
+
+.hero_right{
+    width: 17%;;
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hero_left button{
+    padding: .8vw 3vw;
+    font-size: 3vw;
+    font-family: 'kajiro';
+    margin-top: 2vw;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.hero_right p{
+    text-align: right;
+    font-size: 14px;
+    font-weight: 300;
+    
+
+}
+
+
+
+.hero_right .imgdiv{
+    width: 100%;
+    height: 170px;
+    margin: 20px 0px 30px 0;
+    background-image: url(image/unma-desai-zzz1_PUhTuA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hero_right p:nth-child(3){
+    margin-bottom: 50px;
+}
